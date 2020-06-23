@@ -25,7 +25,7 @@ class App extends Component {
 
     render() { //props나 state 값이 바뀌면 해당되 component의 render 함수가 호출되도록 약속 되어 있다!
         console.log('App render');
-        var _title, _desc, _article = null;
+        let _title, _desc, _article = null;
         if (this.state.mode === 'welcome') {
             _title = this.state.welcome.title;
             _desc = this.state.welcome.desc;
